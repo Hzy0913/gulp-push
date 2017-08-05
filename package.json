@@ -1,0 +1,19 @@
+{
+  "name": "gulpgit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo /"
+  },
+  "author": "han",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-git": "^2.4.1",
+    "gulp-sequence": "^0.4.6"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^3.3.0"
+  }
+}
