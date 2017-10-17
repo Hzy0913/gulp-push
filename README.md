@@ -1,7 +1,7 @@
 # 用gulp配合git进行代码部署上传
 ## 在项目中我们经常会需要先执行打包命令(比如npm run build)，在进行git部署,此时我们就需要进行多不操作，显然会很繁琐。使用这个gulp脚本即可完成一行命令打包部署,并且可以自定义commit内容。
 ## 安装gulp依赖
-> npm install gulp child_process gulp-sequence minimist
+> npm install 
 > 
 
 ## 具体实现代码
