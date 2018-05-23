@@ -1,10 +1,13 @@
-# 用gulp配合git进行代码部署上传
-## 在项目中我们经常会需要先执行打包命令(比如npm run build)，在进行git部署,此时我们就需要进行多不操作，显然会很繁琐。使用这个gulp脚本即可完成一行命令打包部署,并且可以自定义commit内容。
-## 安装gulp依赖
-> npm install 
-> 
+### 用gulp配合git进行代码部署上传
+在项目中我们经常会需要先执行打包命令(比如npm run build)，再进行git部署,此时我们就需要进行多步操作，显然会很繁琐。使用这个gulp脚本即可完成一行命令打包部署,并且可以自定义commit内容。
 
-## 具体实现代码
+### 安装
+#### 克隆项目
+`git clone git@github.com:Hzy0913/gulp-push.git`
+#### 安装依赖
+`npm install`
+
+### 具体实现代码
 
 ```
 var gulp = require('gulp');
@@ -87,23 +90,24 @@ gulp.task( 'c', gulpSequence( 'child','build','back','add', 'commit','push'));
 gulp.task( 'p', gulpSequence('pull'));
 
 ```
-##  使用命令
+####  使用命令（____注意命令需要在你的Git Bash 中使用____）
 1.__直接push代码到远程仓库__（git add * +git commit -m 's'  +git push）
-> gulp
-> 
+`gulp`
 
 2.__自定义commit内容push代码到远程仓库__（git add * +git commit -m 's' +git push）
-> gulp -a 自定义commit
-> 
+`gulp -a 自定义commit`
 
 3.__打包后push代码到远程仓库__（build后 git add * +git commit -m 自定义 +git push）
-> gulp b 
+`gulp b`
 
 
 4.__自定义commit内容push代码到远程仓库__（build后 git add * +git commit -m 自定义 +git push）
-> gulp b -a 自定义commit
-> 
+`gulp b -a 自定义commit`
 
 5.__更新远程代码仓库__（git pull）
-> gulp p
-> 
+`gulp p`
+
+__自定义commit命令并打包上传（在你的git bash命令行中）__
+![](http://img.binlive.cn/upload/1508211655986)
+__代码仓库已更新__
+![](http://img.binlive.cn/upload/1508211720347)
