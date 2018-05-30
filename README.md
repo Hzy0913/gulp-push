@@ -100,4 +100,3 @@ __自定义commit命令并打包上传（在你的git bash命令行中）__
 ![](http://img.binlive.cn/upload/1508211655986)
 __代码仓库已更新__
 ![](http://img.binlive.cn/upload/1508211720347)
-具体代码可以看我github[https://github.com/Hzy0913/gulp-push](https://github.com/Hzy0913/gulp-push)
